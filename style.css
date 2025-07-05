@@ -1,17 +1,26 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: #eaeaea;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
 .container {
   max-width: 500px;
+  width: 90%;
   margin: 60px auto;
   background-color: #ffffff;
   padding: 30px 40px;
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
 }
 
 h2 {
@@ -43,7 +52,7 @@ button {
   width: 100%;
   padding: 12px;
   margin-top: 25px;
-  background-color: #007BFF;
+  background-color: #e63946;
   color: white;
   font-size: 1em;
   font-weight: bold;
@@ -54,7 +63,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #a4161a;
 }
 
 #result {
@@ -63,4 +72,29 @@ button:hover {
   font-weight: bold;
   color: #28a745;
   text-align: center;
+}
+
+.license-banner {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  padding: 10px 15px;
+  font-size: 0.9em;
+  color: #333;
+  z-index: 1000;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.license-banner a {
+  color: #e63946;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.license-banner a:hover {
+  text-decoration: underline;
+  color: #a4161a;
 }
